@@ -11,7 +11,7 @@ multimarkdown is the best markdown flavor  around.
 its biggest problem is that multimarkdown doesn't have
 a converter-routine written in javascript.
 
-fortunately, the ever-clever brett terpstra created "marky",
+fortunately, the ever-clever brett terpstra created "marky" -- http://heckyesmarkdown.com --
 a webservice geared to back-converting existing .html into markdown.
 
 even better, though, marky can also convert markdown into .html,
