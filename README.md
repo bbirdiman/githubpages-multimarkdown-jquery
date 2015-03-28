@@ -39,7 +39,7 @@ would like me to post more, send me some of that star love.
 &lt;head>  
 &lt;meta http-equiv="Content-type" content="text/html;charset=UTF-8">  
 &lt;title>  
-githubpages multimarkdown  
+githubpages-multimarkdown-javascript skeleton  
 &lt;/title>  
 &lt;script src=http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js>&lt;/script>  
 &lt;/head>  
