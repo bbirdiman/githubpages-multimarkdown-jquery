@@ -67,6 +67,7 @@ function domarky(){
 $("#thehtml").html("calling marky...")  
 var result=""  
 var convertthis=$("#thetext").val()  
+$.ajaxSetup({cache:false})  
 $.post("http://heckyesmarkdown.com/go/",{domarkdown:1,text:convertthis,},function(result){  
 $("#thehtml").html(result)  
 })  
