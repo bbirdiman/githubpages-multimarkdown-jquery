@@ -2,6 +2,8 @@
 
 ## github pages converted with multimarkdown using javascript
 
+demo: https://bbirdiman.github.io/githubpages-multimarkdown-javascript.html
+
 github pages is a great place to store light-markup text-files,
 because you get version-control, and (mainly) it's cost-free.
 
