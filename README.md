@@ -52,7 +52,7 @@ githubpages multimarkdown
 &lt;/div>  
 &lt;script type=text/javascript>  
 function dogetgithub(){  
-var theurl=$("#thetext").val()  
+var theurl=$("#thetext").val().trim()  
 if (theurl.substring(0,4) !=  "http"){theurl="http://fletcher.github.io/peg-multimarkdown/index.txt"}  
 $.ajaxSetup({cache:false})  
 $.ajax({  
