@@ -35,41 +35,41 @@ would like me to post more, send me some of that star love.
 
 <code>
 
-&lt;!doctype html>
-&lt;head>
-&lt;meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-&lt;title>
-githubpages multimarkdown
-&lt;/title>
-&lt;script src=http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js></script>
-&lt;/head>&lt;body style=margin:0;padding:0>
-&lt;button onclick=dogetgithub() id=getgithub style=width:20%;height:60px>get github</button>
-&lt;button onclick=domarky() id=marky style=width:20%;height:60px>do marky</button><br>
-&lt;textarea id=thetext style=position:absolute;left:20px;top:66px;width:47%;bottom:0>http://fletcher.github.io/peg-multimarkdown/index.txt</textarea>
-&lt;div id=thehtml style=position:absolute;margin:0;padding:0;padding-right:20px;left:54%;top:0;right:0;bottom:0;overflow-x:hidden;overflow-y:auto></div>
-&lt;script type=text/javascript>
-function dogetgithub(){
-var theurl=$("#thetext").val()
-if (theurl.substring(0,4) != "http"){theurl="http://fletcher.github.io/peg-multimarkdown/index.txt"}
-$.ajaxSetup({cache:false})
-$.ajax({
-url: theurl,
-dataType: 'text',
-fail: function(data){$("#thetext").val(" fail! ");document.title=" fail! "},
-success: function(data){$("#thetext").val(data)}
-})
-}</script>
-<script type=text/javascript>
-function domarky(){
-$("#thehtml").html("calling marky...")
-var result=""
-var convertthis=$("#thetext").val()
-$.post("http://heckyesmarkdown.com/go/",{domarkdown:1,text:convertthis,},function(result){
-$("#thehtml").html(result)
-})
-}&lt;/script>
-&lt;/body>
-&lt;/html>
+&lt;!doctype html>  
+&lt;head>  
+&lt;meta http-equiv="Content-type" content="text/html;charset=UTF-8">  
+&lt;title>  
+githubpages multimarkdown  
+&lt;/title>  
+&lt;script src=http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js></script>  
+&lt;/head>&lt;body style=margin:0;padding:0>  
+&lt;button onclick=dogetgithub() id=getgithub style=width:20%;height:60px>get github</button>  
+&lt;button onclick=domarky() id=marky style=width:20%;height:60px>do marky</button><br>  
+&lt;textarea id=thetext style=position:absolute;left:20px;top:66px;width:47%;bottom:0>http://fletcher.github.io/peg-multimarkdown/index.txt</textarea>  
+&lt;div id=thehtml style=position:absolute;margin:0;padding:0;padding-right:20px;left:54%;top:0;right:0;bottom:0;overflow-x:hidden;overflow-y:auto></div>  
+&lt;script type=text/javascript>  
+function dogetgithub(){  
+var theurl=$("#thetext").val()  
+if (theurl.substring(0,4) !=  "http"){theurl="http://fletcher.github.io/peg-multimarkdown/index.txt"}  
+$.ajaxSetup({cache:false})  
+$.ajax({  
+url: theurl,  
+dataType: 'text',  
+fail: function(data){$("#thetext").val(" fail! ");document.title=" fail! "},  
+success: function(data){$("#thetext").val(data)}  
+})  
+}&lt;/script>  
+&lt;script type=text/javascript>  
+function domarky(){  
+$("#thehtml").html("calling marky...")  
+var result=""  
+var convertthis=$("#thetext").val()  
+$.post("http://heckyesmarkdown.com/go/",{domarkdown:1,text:convertthis,},function(result){  
+$("#thehtml").html(result)  
+})  
+}&lt;/script>  
+&lt;/body>  
+&lt;/html>  
 
 </code>
 
