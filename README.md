@@ -68,9 +68,12 @@ success: function(data){$("#thetext").val(data)}
 function domarky(){  
 $("#thehtml").html("calling marky...")  
 var result=""  
-var convertthis=$("#thetext").val()  
+var convertthis=$("#thetext").val()
+convertthis=convertthis.replace(/\\c/g,"ZZZZ")
+convertthis=convertthis.replace("TextMate-prefs.png","https://bbirdiman.github.io/TextMate-prefs.png")
 $.ajaxSetup({cache:false})  
 $.post("http://heckyesmarkdown.com/go/",{domarkdown:1,text:convertthis,},function(result){  
+result=result.replace(/ZZZZ/g,"\c")
 $("#thehtml").html(result)  
 })  
 }&lt;/script>  
